@@ -1,26 +1,4 @@
-import { AiTwotoneLike } from "react-icons/ai";
-import { CgWebsite } from "react-icons/cg";
-import {
-  FaAmazon,
-  FaEnvelopeOpenText,
-  FaFacebook,
-  FaFileAlt,
-  FaGoogle,
-  FaInstagram,
-  FaPenNib,
-  FaTiktok,
-  FaYoutube,
-} from "react-icons/fa";
-import { GiClick, GiLoveSong } from "react-icons/gi";
-import { ImProfile } from "react-icons/im";
-import {
-  MdOutlineNotificationsActive,
-  MdOutlineSubscriptions,
-  MdTitle,
-} from "react-icons/md";
-import { RiFilePaper2Line } from "react-icons/ri";
-import { TbBrandBeats, TbMessageChatbot } from "react-icons/tb";
-import { TiStarHalfOutline } from "react-icons/ti";
+import { iconMap } from "../utils/icons";
 import { Data } from "../types";
 
 export const allData: Data[] = [
@@ -30,7 +8,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: GiClick,
+        icon: iconMap.GiClick,
         name: "High-Converting Ad Copies for Social Media & Google Ads!",
         description: `🔥 Engage • Convert • Grow \n👋 Let's Create Winning Ad Copies for You!`,
         questions: [
@@ -68,7 +46,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: GiClick,
+        icon: iconMap.GiClick,
         name: "Keyword and Audience Genrate",
         description: `🔥 Boost Your SEO & Ads with High-Performing Keywords!`,
         questions: [
@@ -97,7 +75,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: GiClick,
+        icon: iconMap.GiClick,
         name: "Clickbait Titles",
         description: "Create a creative clickbait titles for your products",
         questions: [
@@ -124,7 +102,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: GiClick,
+        icon: iconMap.GiClick,
         name: "Ad Headlines",
         description: "Write an attention grabbing ad headlines",
         questions: [
@@ -160,7 +138,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: MdTitle,
+        icon: iconMap.MdTitle,
         name: "Blog Ideas & Outlines",
         description:
           "Nobody wants to read boring blog titles. Generate catchy blog titles with this tool.",
@@ -191,7 +169,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: MdTitle,
+        icon: iconMap.MdTitle,
         name: "Blog Section Writing",
         description:
           "Craft compelling, well-structured, and engaging blog sections effortlessly!",
@@ -233,7 +211,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: MdTitle,
+        icon: iconMap.MdTitle,
         name: "Blog Rewriting & Improvement",
         description:
           "Rephrase or enhance existing blogs for better readability and engagement.",
@@ -251,7 +229,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: MdTitle,
+        icon: iconMap.MdTitle,
         name: "Fact-Checking & Research Assistance",
         description:
           "Provide accurate information and credible sources for your article.",
@@ -286,7 +264,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Article Generator",
         description:
           "Turn a title and outline text into a fully complete high quality article within seconds",
@@ -323,7 +301,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Content Rewriter",
         description:
           "Take a piece of content and rewrite it to make it more interesting, creative, and engaging",
@@ -347,7 +325,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Paragraph Generator",
         description:
           "Generate paragraphs about any topic including a keyword and in a specific tone of voice",
@@ -373,7 +351,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Paragraph Generator",
         description:
           "Write short, simple and informative points for the subheadings of your article",
@@ -397,7 +375,7 @@ export const allData: Data[] = [
       },
       {
         id: 5,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Pros & Cons Analysis",
         description:
           "Evaluate the advantages and disadvantages of a product, service, or concept for your blog or research.",
@@ -425,7 +403,7 @@ export const allData: Data[] = [
       },
       {
         id: 6,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Summarize Text",
         description:
           "Generate concise, high-quality summaries while retaining key details and ",
@@ -447,7 +425,7 @@ export const allData: Data[] = [
       },
       {
         id: 7,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Product Description",
         description:
           "Create compelling, persuasive, and SEO-optimized product descriptions to engage your audience.",
@@ -484,7 +462,7 @@ export const allData: Data[] = [
       },
       {
         id: 8,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Startup Name Generator",
         description:
           "Generate innovative, unique, and brandable names for your startup instantly.",
@@ -513,7 +491,7 @@ export const allData: Data[] = [
       },
       {
         id: 9,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Resume Builder",
         description: "Create a professional and ATS-friendly resume instantly.",
         questions: [
@@ -548,7 +526,7 @@ export const allData: Data[] = [
       },
       {
         id: 10,
-        icon: FaEnvelopeOpenText,
+        icon: iconMap.FaEnvelopeOpenText,
         name: "Cold Email Generator",
         description:
           "Create compelling cold emails for networking, sales, or job applications.",
@@ -580,7 +558,7 @@ export const allData: Data[] = [
       },
       {
         id: 11,
-        icon: FaFileAlt,
+        icon: iconMap.FaFileAlt,
         name: "Presentation Slide Generator",
         description:
           "Generate professional presentation slides based on your content.",
@@ -612,7 +590,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: FaAmazon,
+        icon: iconMap.FaAmazon,
         name: "Amazon Product Description",
         description: "Create attention grabbing amazon product description",
         questions: [
@@ -636,7 +614,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: FaAmazon,
+        icon: iconMap.FaAmazon,
         name: "Product Benefits",
         description: "List the product benefits using advanced tools.",
         questions: [
@@ -661,7 +639,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: FaAmazon,
+        icon: iconMap.FaAmazon,
         name: "Selling Product Titles",
         description:
           "Find out selling product titles for your product description",
@@ -686,7 +664,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: FaAmazon,
+        icon: iconMap.FaAmazon,
         name: "Product Comparisons",
         description:
           "Create a comprehensive comparison of two products between each other",
@@ -704,7 +682,7 @@ export const allData: Data[] = [
       },
       {
         id: 5,
-        icon: FaAmazon,
+        icon: iconMap.FaAmazon,
         name: "Product Characteristics",
         description: "Write a full product characteristics",
         questions: [
@@ -728,7 +706,7 @@ export const allData: Data[] = [
       },
       {
         id: 6,
-        icon: FaAmazon,
+        icon: iconMap.FaAmazon,
         name: "Amazon Product Features",
         description:
           "Advantages and features of your products that will make them irresistable for shoppers",
@@ -766,7 +744,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: FaEnvelopeOpenText,
+        icon: iconMap.FaEnvelopeOpenText,
         name: "Welcome Email",
         description:
           "Create engaging and impactful welcome emails for your customers.",
@@ -799,7 +777,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: FaEnvelopeOpenText,
+        icon: iconMap.FaEnvelopeOpenText,
         name: "Cold Email",
         description: "Generate high-converting cold emails with AI.",
         questions: [
@@ -831,7 +809,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: FaEnvelopeOpenText,
+        icon: iconMap.FaEnvelopeOpenText,
         name: "Follow-Up Email",
         description:
           "Keep the conversation going with a well-structured follow-up email.",
@@ -864,7 +842,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: FaEnvelopeOpenText,
+        icon: iconMap.FaEnvelopeOpenText,
         name: "Email Subject Lines",
         description:
           "Generate attention-grabbing subject lines that increase email open rates.",
@@ -893,7 +871,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: FaPenNib,
+        icon: iconMap.FaPenNib,
         name: "Problem-Agitate-Solution (PAS) Framework",
         description:
           "Generate one of the most effective copywriting formulas for your business",
@@ -925,7 +903,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: FaPenNib,
+        icon: iconMap.FaPenNib,
         name: "Attention-Interest-Desire-Action (AIDA) Framework",
         description:
           "AIDA model will help you ensure that any kind of writing is as effective as possible",
@@ -950,7 +928,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: FaPenNib,
+        icon: iconMap.FaPenNib,
         name: "Before–After–Bridge (BAB) Framework",
         description:
           "Conversion-oriented formula designed to make a particular offer more appealing",
@@ -975,7 +953,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: FaPenNib,
+        icon: iconMap.FaPenNib,
         name: "Promise–Picture–Proof–Push (PPPP) Framework",
         description:
           "Use the 4P formula to craft persuasive content that moves readers to action",
@@ -1006,7 +984,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: TbBrandBeats,
+        icon: iconMap.TbBrandBeats,
         name: "Company Press Release",
         description: "Write a company press release with the help of AI",
         questions: [
@@ -1028,7 +1006,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: TbBrandBeats,
+        icon: iconMap.TbBrandBeats,
         name: "Brand/Product Press Release",
         description:
           "Write a brand or product press release with the help of AI",
@@ -1051,7 +1029,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: TbBrandBeats,
+        icon: iconMap.TbBrandBeats,
         name: "Brand Names",
         description: "Generate unique brand names with the help of AI",
         questions: [
@@ -1075,7 +1053,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: FaFacebook,
+        icon: iconMap.FaFacebook,
         name: "Facebook Ads Mastery",
         description:
           "Write Facebook ads that engage your audience and deliver a high conversion rate",
@@ -1104,7 +1082,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: FaInstagram,
+        icon: iconMap.FaInstagram,
         name: "Instagram Caption Mastery",
         description:
           "Grab attention with catchy captions for your Instagram posts",
@@ -1122,7 +1100,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: FaInstagram,
+        icon: iconMap.FaInstagram,
         name: "Instagram Mastery",
         description: "Find the best to use for your Instagram posts",
         questions: [
@@ -1138,7 +1116,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: AiTwotoneLike,
+        icon: iconMap.AiTwotoneLike,
         name: "Personal Social Media Post Mastery",
         description:
           "Write a social media post for yourself to be published on any platform",
@@ -1156,7 +1134,7 @@ export const allData: Data[] = [
       },
       {
         id: 5,
-        icon: AiTwotoneLike,
+        icon: iconMap.AiTwotoneLike,
         name: "Business Social Media Post Mastery",
         description:
           "Write a post for your business to be published on any social media platform",
@@ -1184,7 +1162,7 @@ export const allData: Data[] = [
       },
       {
         id: 6,
-        icon: FaFacebook,
+        icon: iconMap.FaFacebook,
         name: "Facebook Ad Headline Mastery",
         description:
           "Write catchy and convincing headlines to make your Facebook Ads stand out",
@@ -1213,7 +1191,7 @@ export const allData: Data[] = [
       },
       {
         id: 7,
-        icon: FaGoogle,
+        icon: iconMap.FaGoogle,
         name: "Google Ad Headline Mastery",
         description:
           "Write catchy 30-character headlines to promote your product with Google Ads",
@@ -1248,7 +1226,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: FaYoutube,
+        icon: iconMap.FaYoutube,
         name: "Video Descriptions",
         description:
           "Write compelling YouTube descriptions to get people interested in your video",
@@ -1264,7 +1242,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: FaYoutube,
+        icon: iconMap.FaYoutube,
         name: "Video Titles",
         description:
           "Compelling YouTube video title to catch everyone's attention",
@@ -1281,7 +1259,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: FaYoutube,
+        icon: iconMap.FaYoutube,
         name: "YouTube Tags Generator",
         description:
           "Generate SEO-optimized YouTube tags/keywords for your video",
@@ -1298,7 +1276,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: MdOutlineSubscriptions,
+        icon: iconMap.MdOutlineSubscriptions,
         name: "Video Scripts",
         description:
           "Quickly create scripts for your videos and start shooting",
@@ -1316,7 +1294,7 @@ export const allData: Data[] = [
       },
       {
         id: 5,
-        icon: FaTiktok,
+        icon: iconMap.FaTiktok,
         name: "TikTok Video Scripts",
         description:
           "Video scripts that are ready to shoot and will make you go viral",
@@ -1339,7 +1317,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: CgWebsite,
+        icon: iconMap.CgWebsite,
         name: "Meta Descriptions",
         description:
           "Write SEO-optimized meta descriptions based on a website description.",
@@ -1361,7 +1339,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: TbMessageChatbot,
+        icon: iconMap.TbMessageChatbot,
         name: "FAQs",
         description:
           "Generate frequently asked questions based on your product description.",
@@ -1385,7 +1363,7 @@ export const allData: Data[] = [
       },
       {
         id: 3,
-        icon: TbMessageChatbot,
+        icon: iconMap.TbMessageChatbot,
         name: "FAQ Answers",
         description: "Generate creative answers to FAQs about your business.",
         questions: [
@@ -1413,7 +1391,7 @@ export const allData: Data[] = [
       },
       {
         id: 4,
-        icon: TiStarHalfOutline,
+        icon: iconMap.TiStarHalfOutline,
         name: "Testimonials / Reviews",
         description:
           "Generate user testimonials to add social proof to your website.",
@@ -1437,7 +1415,7 @@ export const allData: Data[] = [
       },
       {
         id: 5,
-        icon: ImProfile,
+        icon: iconMap.ImProfile,
         name: "Company Bio",
         description: "Write a comprehensive company bio based on your inputs.",
         questions: [
@@ -1455,7 +1433,7 @@ export const allData: Data[] = [
       },
       {
         id: 6,
-        icon: CgWebsite,
+        icon: iconMap.CgWebsite,
         name: "Newsletter Generator",
         description: "Generate a newsletter based on the provided information.",
         questions: [
@@ -1471,7 +1449,7 @@ export const allData: Data[] = [
       },
       {
         id: 7,
-        icon: MdOutlineNotificationsActive,
+        icon: iconMap.MdOutlineNotificationsActive,
         name: "Blog Post Ideas",
         description: "Get creative blog post ideas based on your niche.",
         questions: [
@@ -1487,7 +1465,7 @@ export const allData: Data[] = [
       },
       {
         id: 8,
-        icon: RiFilePaper2Line,
+        icon: iconMap.RiFilePaper2Line,
         name: "Social Media Captions",
         description: "Create engaging captions for your social media posts.",
         questions: [
@@ -1514,7 +1492,7 @@ export const allData: Data[] = [
     allcontents: [
       {
         id: 1,
-        icon: GiLoveSong,
+        icon: iconMap.GiLoveSong,
         name: "Song Lyrics",
         description:
           "Generate a song lyrics based on your description and keywords",
@@ -1542,7 +1520,7 @@ export const allData: Data[] = [
       },
       {
         id: 2,
-        icon: MdOutlineNotificationsActive,
+        icon: iconMap.MdOutlineNotificationsActive,
         name: "App and SMS Notifications",
         description:
           "Notification messages for your apps, websites and mobile devices that grabs users attention",

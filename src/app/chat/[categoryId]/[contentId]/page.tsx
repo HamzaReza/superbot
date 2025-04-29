@@ -1,9 +1,9 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { SubContent } from "@/app/types";
+import { SubContent, Data } from "@/app/types";
 import { useEffect, useState } from "react";
-import { iconMap } from "@/app/utils/icons";
+import { allData } from "@/app/data";
 
 export default function ChatPage() {
   const routerParams = useParams();
@@ -13,18 +13,21 @@ export default function ChatPage() {
 
   useEffect(() => {
     try {
-      const storageKey = `chat_content_${categoryId}_${contentId}`;
-      const storedContent = localStorage.getItem(storageKey);
+      const storedCategoryId = JSON.parse(
+        localStorage.getItem("chat_category_id") as string
+      );
+      const storedContentId = JSON.parse(
+        localStorage.getItem("chat_content_id") as string
+      );
 
-      if (storedContent) {
-        const parsedContent = JSON.parse(storedContent);
-        const iconComponent =
-          iconMap[parsedContent.iconType as keyof typeof iconMap];
-        const reconstructedContent = {
-          ...parsedContent,
-          icon: iconComponent,
-        };
-        setContent(reconstructedContent);
+      const category = allData.find((item) => item.id === storedCategoryId);
+      if (category) {
+        const foundContent = category.allcontents.find(
+          (content) => content.id === storedContentId
+        );
+        if (foundContent) {
+          setContent(foundContent);
+        }
       }
     } catch (error) {
       console.error("Error retrieving content:", error);

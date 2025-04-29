@@ -4,13 +4,9 @@ export type Data = {
   allcontents: SubContent[];
 };
 
-// Import IconType from utils/icons
-import { IconType } from "../utils/icons";
-import { SVGProps } from "react";
-
 export type SubContent = {
   id: number;
-  icon: React.ComponentType<SVGProps<SVGSVGElement>> & { name: IconType };
+  icon: React.ElementType;
   name: string;
   description: string;
   questions: {

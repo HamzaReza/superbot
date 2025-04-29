@@ -5,18 +5,8 @@ import { useRouter } from "next/navigation";
 export const Content = ({ categoryItems }: { categoryItems: Data[] }) => {
   const router = useRouter();
   const _onClick = (item: Data, content: SubContent) => {
-    const storageKey = `chat_content_${item.id}_${content.id}`;
-    const contentData = {
-      id: content.id,
-      name: content.name,
-      description: content.description,
-      questions: content.questions,
-      prompt: content.prompt,
-      defaultQuestion: content.defaultQuestion,
-      icon: content.icon,
-      iconType: content.icon.name,
-    };
-    localStorage.setItem(storageKey, JSON.stringify(contentData));
+    localStorage.setItem("chat_category_id", JSON.stringify(item.id));
+    localStorage.setItem("chat_content_id", JSON.stringify(content.id));
     router.push(`/chat/${item.id}/${content.id}`);
   };
   return (
