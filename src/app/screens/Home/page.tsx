@@ -5,6 +5,7 @@ import { Navigation as NavBar } from "../../components/navigation";
 import { Search } from "../../components/search";
 import { allData, categories } from "../../data";
 import { Category, Data } from "../../types";
+import { Content } from "./components/Content";
 
 export default function Home() {
   const [filterData, setFilterData] = useState<Data[]>(allData);
@@ -79,18 +80,7 @@ export default function Home() {
                 <div className="text-sm text-gray-400 mb-4">
                   {category.description}
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {categoryItems.map((item: Data) =>
-                    item.allcontents.map((content) => (
-                      <div
-                        className="w-full p-4 mb-2 text-center bg-card rounded-xl text-white cursor-pointer"
-                        key={`${item.id}-${content.id}`}
-                      >
-                        <div>{content.name}</div>
-                      </div>
-                    ))
-                  )}
-                </div>
+                <Content categoryItems={categoryItems} />
               </div>
             );
           })

@@ -1,19 +1,25 @@
 export type Data = {
   id: number;
   category: string;
-  allcontents: {
-    id: number;
-    icon: React.ElementType;
-    name: string;
-    description: string;
-    questions: {
-      que: string;
-      required: boolean;
-      placeholder: string;
-    }[];
-    prompt: string;
-    defaultQuestion?: string;
+  allcontents: SubContent[];
+};
+
+// Import IconType from utils/icons
+import { IconType } from "../utils/icons";
+import { SVGProps } from "react";
+
+export type SubContent = {
+  id: number;
+  icon: React.ComponentType<SVGProps<SVGSVGElement>> & { name: IconType };
+  name: string;
+  description: string;
+  questions: {
+    que: string;
+    required: boolean;
+    placeholder: string;
   }[];
+  prompt: string;
+  defaultQuestion?: string;
 };
 
 export type Category = {
