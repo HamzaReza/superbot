@@ -1,8 +1,8 @@
 "use client";
 
-import { SubContent, Data } from "@/app/types";
-import { useEffect, useState } from "react";
 import { allData } from "@/app/data";
+import { SubContent } from "@/app/types";
+import { useEffect, useState } from "react";
 
 export default function Chatbot({
   params,

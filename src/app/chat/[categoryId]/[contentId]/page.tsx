@@ -1,9 +1,10 @@
 import Chatbot from "./Chatbot";
 
-export default function ChatPage({
-  params,
-}: {
-  params: { categoryId: string; contentId: string };
-}) {
-  return <Chatbot params={params} />;
+type Props = {
+  params: Promise<{ categoryId: string; contentId: string }>;
+};
+
+export default async function ChatPage({ params }: Props) {
+  const resolvedParams = await params;
+  return <Chatbot params={resolvedParams} />;
 }

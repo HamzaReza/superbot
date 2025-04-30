@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 import { allData } from "@/app/data";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { categoryId: string; contentId: string };
-}): Promise<Metadata> {
-  const { categoryId, contentId } = await Promise.resolve(params);
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ categoryId: string; contentId: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const resolvedParams = await params;
+  const { categoryId, contentId } = resolvedParams;
 
   const category = allData.find((item) => item.id === parseInt(categoryId));
   const content = category?.allcontents.find(
