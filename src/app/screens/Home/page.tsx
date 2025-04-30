@@ -22,11 +22,15 @@ export default function Home() {
     }
 
     if (searchQuery) {
-      filteredResults = filteredResults.filter((item: Data) =>
-        item.allcontents.some((content) =>
-          content.name.toLowerCase().includes(searchQuery.toLowerCase())
-        )
-      );
+      const searchLower = searchQuery.toLowerCase();
+      filteredResults = filteredResults
+        .map((item: Data) => ({
+          ...item,
+          allcontents: item.allcontents.filter((content) =>
+            content.name.toLowerCase().includes(searchLower)
+          ),
+        }))
+        .filter((item: Data) => item.allcontents.length > 0);
     }
 
     setFilterData(filteredResults);
