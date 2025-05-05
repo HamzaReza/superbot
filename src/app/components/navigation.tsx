@@ -11,7 +11,7 @@ export const Navigation = () => {
       <Link href={"/"}>
         <Image src={bot} alt="logo" width={50} height={50} />
       </Link>
-      <Link href={"/about"}>
+      <Link href={"/"}>
         <Image src={chat} alt="chat" width={50} height={50} />
       </Link>
     </nav>
