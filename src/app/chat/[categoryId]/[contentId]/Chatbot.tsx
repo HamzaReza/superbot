@@ -19,7 +19,10 @@ export default function Chatbot({
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const lastMessage = messagesEndRef.current?.previousElementSibling;
+    if (lastMessage) {
+      lastMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
   };
 
   useEffect(() => {
@@ -145,7 +148,7 @@ export default function Chatbot({
 
   return (
     <div className="flex flex-col lg:flex-row m-3 gap-4 min-h-screen">
-      <div className="w-full lg:w-1/3 flex flex-col h-[calc(100vh-8rem)] bg-[#1E1E1E] rounded-lg p-6 shadow-lg">
+      <div className="w-full lg:w-1/3 flex flex-col h-[calc(100vh-5rem)] bg-[#1E1E1E] rounded-lg p-6 shadow-lg">
         <div className="flex items-center gap-4">
           {content?.icon && (
             <div className="bg-[#2A2A2A] p-3 rounded-lg shadow-md">
@@ -192,7 +195,7 @@ export default function Chatbot({
           </form>
         )}
       </div>
-      <div className="w-full lg:w-2/3 flex flex-col bg-[#1E1E1E] rounded-lg p-6 shadow-lg h-[calc(100vh-8rem)]">
+      <div className="w-full lg:w-2/3 flex flex-col bg-[#1E1E1E] rounded-lg p-6 shadow-lg h-[calc(100vh-5rem)]">
         {messages.length === 0 ? (
           <div className="flex-1 flex items-center justify-center">
             <p className="text-gray-400 text-center">
