@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
     const completion = await openai.chat.completions.create({
       messages: prompts.map((prompt) => ({ role: "user", content: prompt })),
-      model: "gpt-4",
+      model: "gpt-3.5-turbo",
     });
 
     return NextResponse.json({
